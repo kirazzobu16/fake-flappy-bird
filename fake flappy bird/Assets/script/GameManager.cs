@@ -2,14 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public int Score;
     public Text ScoreText;
+    public int yourScore;
+    public Text YourScoreText;
     void Start()
     {
         Score = 0;
         ScoreText.text = Score.ToString();
+        
     }
 
     
@@ -21,5 +25,11 @@ public class GameManager : MonoBehaviour
     {
         Score++;
         ScoreText.text = Score.ToString();
+        yourScore = Score;
+        YourScoreText.text = yourScore.ToString();
+    }
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(0);
     }
 }

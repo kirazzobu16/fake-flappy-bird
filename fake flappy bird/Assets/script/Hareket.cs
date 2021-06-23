@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
 
 public class Hareket : MonoBehaviour
 {   
@@ -9,6 +9,9 @@ public class Hareket : MonoBehaviour
     float egim = 45f;
     public GameManager managergame;
       bool oyunbitti = true;
+  
+    public GameObject GameOverScreen;
+   
    
     private void Start()
     {
@@ -46,14 +49,14 @@ public class Hareket : MonoBehaviour
 
         if (egim<=-45)
         {
-            position.x += 0.005f;
-            position.y -= 0.005f;
+            position.x += 1.6f * Time.deltaTime;
+            position.y -= 1.6f * Time.deltaTime;
             this.transform.position = position;
         }
         if(egim>=45)
         {
-            position.x += 0.005f;
-            position.y += 0.005f;
+            position.x += 1.6f * Time.deltaTime;
+            position.y += 1.6f * Time.deltaTime;
             this.transform.position = position;
         }
     }
@@ -67,7 +70,7 @@ public class Hareket : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         oyunbitti = false;
-        SceneManager.LoadScene(0);
+        GameOverScreen.SetActive(true);
     }
 
 
