@@ -9,6 +9,11 @@ public class GameManager : MonoBehaviour
     public Text ScoreText;
     public int yourScore;
     public Text YourScoreText;
+
+    private void Awake()
+    {
+        
+    }
     void Start()
     {
         Score = 0;

@@ -5,17 +5,19 @@ using UnityEngine;
 public class Kamera : MonoBehaviour
 {
     public GameObject karakter;
-  
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private Vector2 kameraUnityEbatlar;
 
+    // Start is called before the first frame update
+    private void Start()
+    {
+       
+    }
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(karakter.transform.position.x+0.74f, 0, -10);
+        Camera kamera = GetComponent<Camera>();
+   
+        transform.position = new Vector3(karakter.transform.position.x + kamera.orthographicSize*kamera.aspect-0.3f, 0, -10);
 
     }
 }

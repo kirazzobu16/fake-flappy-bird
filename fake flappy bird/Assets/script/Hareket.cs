@@ -8,7 +8,8 @@ public class Hareket : MonoBehaviour
     public float eklenenaci;
     float egim = 45f;
     public GameManager managergame;
-      bool oyunbitti = true;
+    bool oyunbitti = true;
+   
   
     public GameObject GameOverScreen;
    
@@ -44,20 +45,18 @@ public class Hareket : MonoBehaviour
     }
     private void fırsttransform()
     {
-        Vector3 position = this.transform.position;
+       
         
 
         if (egim<=-45)
         {
-            position.x += 1.6f * Time.deltaTime;
-            position.y -= 1.6f * Time.deltaTime;
-            this.transform.position = position;
+           
+           transform.position += new Vector3(1.6f, -1.6f, 0) * Time.deltaTime;
         }
         if(egim>=45)
         {
-            position.x += 1.6f * Time.deltaTime;
-            position.y += 1.6f * Time.deltaTime;
-            this.transform.position = position;
+         
+            transform.position += new Vector3(1.6f, 1.6f, 0) * Time.deltaTime;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

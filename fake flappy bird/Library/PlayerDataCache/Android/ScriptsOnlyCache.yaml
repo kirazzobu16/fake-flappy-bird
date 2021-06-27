@@ -9,7 +9,6 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
@@ -76,35 +75,35 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1536}
+      Script: {instanceID: 1562}
     - Class: 114
-      Script: {instanceID: 1700}
+      Script: {instanceID: 1726}
     - Class: 114
-      Script: {instanceID: 1844}
+      Script: {instanceID: 1870}
     - Class: 114
-      Script: {instanceID: 2224}
+      Script: {instanceID: 2250}
     - Class: 114
-      Script: {instanceID: 2232}
+      Script: {instanceID: 2258}
     - Class: 114
-      Script: {instanceID: 2236}
+      Script: {instanceID: 2262}
     - Class: 114
-      Script: {instanceID: 2270}
+      Script: {instanceID: 2296}
     - Class: 114
-      Script: {instanceID: 2652}
+      Script: {instanceID: 2678}
     - Class: 114
-      Script: {instanceID: 2812}
+      Script: {instanceID: 2838}
     - Class: 114
-      Script: {instanceID: 3028}
+      Script: {instanceID: 3054}
     - Class: 114
-      Script: {instanceID: 3272}
+      Script: {instanceID: 3298}
     - Class: 114
-      Script: {instanceID: 3384}
+      Script: {instanceID: 3410}
     - Class: 114
-      Script: {instanceID: 4722}
+      Script: {instanceID: 4748}
     - Class: 114
-      Script: {instanceID: 5068}
+      Script: {instanceID: 5094}
     - Class: 114
-      Script: {instanceID: 5098}
+      Script: {instanceID: 5124}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -703,4 +702,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: D:/DESKTOP/unity/flappy bird.apk
+  playerPath: D:/DESKTOP/unity/fake flappy bird.apk
