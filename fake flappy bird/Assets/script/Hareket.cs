@@ -18,7 +18,8 @@ public class Hareket : MonoBehaviour
     {
         
         transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, egim);
-     
+        
+
     }
 
     void Update()

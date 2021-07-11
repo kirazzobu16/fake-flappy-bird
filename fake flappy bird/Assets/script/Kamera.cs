@@ -5,8 +5,6 @@ using UnityEngine;
 public class Kamera : MonoBehaviour
 {
     public GameObject karakter;
-    private Vector2 kameraUnityEbatlar;
-
     // Start is called before the first frame update
     private void Start()
     {
@@ -17,7 +15,7 @@ public class Kamera : MonoBehaviour
     {
         Camera kamera = GetComponent<Camera>();
    
-        transform.position = new Vector3(karakter.transform.position.x + kamera.orthographicSize*kamera.aspect-0.3f, 0, -10);
+        transform.position = new Vector3(karakter.transform.position.x + kamera.orthographicSize*kamera.aspect-0.2f, 0, -10);
 
     }
 }
