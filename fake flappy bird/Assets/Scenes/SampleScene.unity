@@ -1026,7 +1026,7 @@ GameObject:
   - component: {fileID: 1726696342}
   - component: {fileID: 1726696341}
   m_Layer: 0
-  m_Name: flappy1
+  m_Name: corona
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1088,7 +1088,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d2b290c9ff038024ca9388db46145752, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9239f054de24ce84e99d55383c33974d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1107,7 +1107,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1726696337}
   m_LocalRotation: {x: -0, y: -0, z: 0.38268343, w: 0.92387956}
-  m_LocalPosition: {x: -0.74, y: -0.21, z: 0}
+  m_LocalPosition: {x: -0.688, y: -0.32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1147,9 +1147,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0050565414, y: -0.0007621469}
+  m_Offset: {x: 0.0034320543, y: 0.0006526388}
   serializedVersion: 2
-  m_Radius: 0.09872594
+  m_Radius: 0.09672513
 --- !u!1 &1749311006
 GameObject:
   m_ObjectHideFlags: 0
