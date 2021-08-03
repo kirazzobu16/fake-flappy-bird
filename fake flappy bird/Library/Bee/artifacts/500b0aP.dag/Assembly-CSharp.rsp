@@ -291,6 +291,7 @@
 "Assets/script/GameManager.cs"
 "Assets/script/Hareket.cs"
 "Assets/script/Kamera.cs"
+"Assets/script/vein.cs"
 -langversion:8.0
 
 /deterministic
