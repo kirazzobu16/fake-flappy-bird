@@ -5,72 +5,77 @@ using UnityEngine;
 
 public class Hareket : MonoBehaviour
 {   
-    public float eklenenaci;
-    float egim = 45f;
-    public GameManager managergame;
-    bool oyunbitti = true;
    
-  
+    public GameManager managergame;
+    bool isCountinueGame = true;
+    private bool isLookup = true;
+    [Tooltip("aşağıya doğru bakan sprite sürüklensin")]
+    public SpriteRenderer lookDown;
+    public SpriteRenderer lookUp;
+
     public GameObject GameOverScreen;
    
    
     private void Start()
     {
         
-        transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, egim);
-        
-
+        ChangeAngle();
     }
 
     void Update()
     {
-        if (oyunbitti == true)
+        if (isCountinueGame == true)
         {
             fırsttransform();
-            if (egim <= -45)
-            {
 
-                eklenenaci = 90f;
-
-            }
-            else if (egim >= 45)
-            {
-                eklenenaci = -90f;
-            }
             if (Input.GetMouseButtonDown(0))
             {
-                transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, egim + eklenenaci);
-                egim = egim + eklenenaci;
+               
+                ChangeAngle();
             }
         }
     }
     private void fırsttransform()
     {
-       
-        
-
-        if (egim<=-45)
+        if (isLookup)
         {
-           
-           transform.position += new Vector3(1.6f, -1.6f, 0) * Time.deltaTime;
-        }
-        if(egim>=45)
-        {
-         
             transform.position += new Vector3(1.6f, 1.6f, 0) * Time.deltaTime;
+            return;
         }
+        
+        transform.position += new Vector3(1.6f, -1.6f, 0) * Time.deltaTime;     
+    }
+   
+   /// <summary>
+   /// açıyı değiştirir.
+   /// </summary>
+    public void ChangeAngle()
+    {
+        isLookup = !isLookup;
+        lookUp.enabled = isLookup;
+        lookDown.enabled = !isLookup;
+     
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag== "SkorAlani")
-        {
-            managergame.UpdateScore();
-        }
-    }
+
+       
+     managergame.UpdateScore();
+     }
     private void OnCollisionEnter2D(Collision2D other)
     {
-        oyunbitti = false;
+        isCountinueGame = false;
         GameOverScreen.SetActive(true);
+    }
+    /// <summary>
+    /// personel eklenir
+    /// </summary>
+    /// <param name="ad">personelin adını giriniz</param>
+    /// <param name="personelin soyadı"></param>
+    public void SetPersonel(string ad,string soyad)
+    {
+
     }
 
 

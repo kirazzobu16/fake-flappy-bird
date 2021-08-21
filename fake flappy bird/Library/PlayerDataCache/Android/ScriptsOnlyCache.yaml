@@ -255,7 +255,7 @@ ScriptsOnlyBuild:
     className: Kamera
   - hash:
       serializedVersion: 2
-      Hash: 42c78bdada6df23e3387015c86032292
+      Hash: 63b4119df671df48793217570287c7c1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Hareket

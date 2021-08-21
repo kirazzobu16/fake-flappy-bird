@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4210016041515864484}
   - component: {fileID: -4946460803653612707}
   - component: {fileID: 4476853710497891358}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: altEngel
   m_TagString: DeathArea
   m_Icon: {fileID: 0}

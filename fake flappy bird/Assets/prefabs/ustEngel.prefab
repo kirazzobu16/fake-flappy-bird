@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 8771084483745626789}
   - component: {fileID: 2493138163144526239}
   - component: {fileID: 4720384967583795836}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ustEngel
-  m_TagString: DeathArea
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
